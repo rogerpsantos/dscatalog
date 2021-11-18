@@ -1,4 +1,4 @@
-package com.rxcatalog.rxcatalog;
+package com.rxcatalog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
