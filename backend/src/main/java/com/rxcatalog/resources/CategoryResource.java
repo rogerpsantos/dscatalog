@@ -1,9 +1,8 @@
 package com.rxcatalog.resources;
 
-import com.rxcatalog.entities.Category;
+import com.rxcatalog.dto.CategoryDTO;
 import com.rxcatalog.services.CategoryService;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +21,8 @@ public class CategoryResource {
 	private CategoryService service;
 
 	@GetMapping
-	public ResponseEntity<List<Category>> findAll() {
-		List<Category> list = service.findAll();
+	public ResponseEntity<List<CategoryDTO>> findAll() {
+		List<CategoryDTO> list = service.findAll();
 		return ResponseEntity.ok().body(list);
 		
 	}
